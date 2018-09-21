@@ -24,10 +24,10 @@
       "node_modules"
     ],
     "setupFiles": [
-      "<rootDir>/src/setupTests.ts"
+      "<rootDir>/src/setupTesting.ts"
     ],
     "transform": {
-      "^.+\\.+(j|t)sx?": "babel-jest"
+      "^.+\\.+(j|t)sx?$": "babel-jest"
     },
     "testMatch": [
       "**/?(*.)+(test|spec).(j|t)s?(x)"

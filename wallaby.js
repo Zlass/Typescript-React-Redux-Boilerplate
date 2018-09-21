@@ -2,10 +2,11 @@ module.exports = function (wallaby) {
   return {
     ignore: true,
     files: [
+      "src/**/*.+(t|j)s?(x)",
+      "!src/**/*.+(test|spec).+(t|j)s?(x)",
+      "src/setupTesting.ts",
       "tsconfig.json",
       "package.json",
-      "src/**/*.ts?(x)",
-      "!**/*.+(test|spec).+(t|j)s?(x)",
     ],
     tests: [
       "src/**/*.+(test|spec).+(t|j)s?(x)"
@@ -15,7 +16,7 @@ module.exports = function (wallaby) {
       runner: "/Users/zach/.nvm/versions/node/v10.9.0/bin/node",
     },
     compilers: {
-      '**/*.(j|t)s?(x)': wallaby.compilers.babel({
+      '**/*.+(j|t)s?(x)': wallaby.compilers.babel({
           babelrc: true,
       })
     },
