@@ -4,7 +4,7 @@ module.exports = function (wallaby) {
     files: [
       "src/**/*.+(t|j)s?(x)",
       "!src/**/*.+(test|spec).+(t|j)s?(x)",
-      "src/setupTesting.ts",
+      "tools/setupTesting.js",
       "tsconfig.json",
       "package.json",
     ],

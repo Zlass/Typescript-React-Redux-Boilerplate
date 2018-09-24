@@ -24,7 +24,7 @@
       "node_modules"
     ],
     "setupFiles": [
-      "<rootDir>/src/setupTesting.ts"
+      "<rootDir>/tools/setupTesting.js"
     ],
     "transform": {
       "^.+\\.+(j|t)sx?$": "babel-jest"
